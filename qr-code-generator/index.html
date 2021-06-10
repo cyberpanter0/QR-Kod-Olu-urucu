@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr" >
+<head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>QR Kod Oluşturucu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<header class="jumbotron">
+  <div class="container">
+    <h1 class="text-center">
+     QR Kod Oluşturucu
+    </h1>
+  </div>
+</header>
+<section class="container">
+  <form action="" id="form">
+    <label class="form-label" for="input-text">QR Kod'a dönüşmesini istediğiniz metni giriniz:</label>
+      <input type="text" class="form-control" name="input-text" required autocomplete="off" id="input-text" oninput="setCustomValidity('')">
+    <div class="text-center">
+    <button type="submit" class="btn btn-primary mt-3 align-center">Gönder</button>
+     </div>
+    </form>
+  <section>
+    <div class="d-none" id="result">
+      <p id="qr-code-for" class="mr-auto"></p>
+  
+    </div>
+    <img id="qr-code" src="" alt="" class="mx-auto d-block">
+    <canvas id="img-canvas" class="d-none" width="150" height="150"></canvas>
+  </section> 
+  <a type="button" class="btn btn-primary" id="download">
+        Dışarı aktar
+      </a>
+      <footer class="container-fluid text-center">
+        <a href="https://eyuphancam.blogspot.com/">Eyüp Han CAM</a><p>Tarafından tasarlanımıştır</p>
+</footer>
+</body>
+<!-- Script'ler -->
+<script  src="./script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+</html>
